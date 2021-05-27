@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct FourthUIView: View {
+    
+    @State var myName = "Bilgehan"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text(myName).padding().font(.largeTitle)
+            Button(action: {
+                myName = "Kaya"
+            }, label: { Text("Change") }).padding()
+        }
     }
 }
 

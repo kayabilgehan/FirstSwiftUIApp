@@ -1,15 +1,19 @@
-//
-//  FifthUIView.swift
-//  FirstSwiftUIApp
-//
-//  Created by Bilgehan KAYA on 28.05.2021.
-//
+//Binding işlemi
 
 import SwiftUI
 
 struct FifthUIView: View {
+    
+    @State var myName = "James"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text(myName)
+                .padding()
+                .font(.largeTitle)
+            TextField("placeholder", text: $myName)
+                .padding()
+        }
     }
 }
 

@@ -1,16 +1,29 @@
-//
-//  ContentView.swift
-//  FirstSwiftUIApp
-//
-//  Created by Bilgehan KAYA on 27.05.2021.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            VStack{
+                Text("Bilgehan").padding()
+                Text("Hello, world!")
+                    .font(.largeTitle)
+                    .foregroundColor(Color.blue)
+                    .multilineTextAlignment(.center).padding()
+            }
+            HStack{Text("Bilgehan").padding()
+                Text("Hello, world!")
+                    .font(.largeTitle)
+                    .foregroundColor(Color.blue)
+                    .multilineTextAlignment(.center).padding()}
+            ZStack{
+                Text("Bilgehan").padding()
+                Text("Hello, world!")
+                    .font(.largeTitle)
+                    .foregroundColor(Color.blue)
+                    .multilineTextAlignment(.center).padding()
+            }
+            
+        }
     }
 }
 
